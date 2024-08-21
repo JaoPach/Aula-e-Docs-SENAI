@@ -1,0 +1,10 @@
+p {
+    color: aquamarine;
+    background-color: black;
+    font-size: 50px;
+    border: 10px solid red;
+}
+
+body {
+    background-color: blueviolet;
+}

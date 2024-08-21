@@ -1,0 +1,33 @@
+/*Reset para espaçamento de margem*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+
+}
+
+.grid-2 {
+    flex: 2;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rosa {
+    background-color: deeppink;
+}
+
+.amarelo {
+    background-color: gold;
+}

@@ -1,0 +1,75 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');*/
+/*Fontes disponiveis em "fonts.google.com"*/
+/*Ao importar sua fonte ela permanecera enquanto sua maquina tiver internet, ficando apenas em cache do navegador, assim ao apertar CTRL SHIFT R o cache será limpo e ela sumira.
+Ao baixar e usar a fonte conectada a pasta onde a mesma está mesmo sem internet ela permanecerá na pagina web mesmo ao tentar limpar o cache*/
+@font-face {
+    font-family: "BungeeTint-Regular";
+    src: url(fonts/BungeeTint-Regular.ttf);
+}
+
+.bungee {
+    font-family: "BungeeTint-Regular";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.bola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.retangulo {
+    width: 200px;
+    height: 100px;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rosa {
+    background-color: chartreuse;
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.margem-10 {
+    margin: 100px 100px 100px 200px;
+}
+
+.margem-percentual {
+    margin: 50%;
+}
+
+.espacamento {
+    padding: 50px;
+}
+
+div>P {
+    color: blueviolet;
+    font-size: 30px;
+}

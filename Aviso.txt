@@ -1,0 +1,3 @@
+Na maioria dos HTML's e CSS's existem comentarios explicando atributos
+ ou funcionamento dos mesmos então caso você tenha uma duvida do funcionamento
+ de um dos atributos verifique os outros html's ou css que talvez exista uma explicação neles.

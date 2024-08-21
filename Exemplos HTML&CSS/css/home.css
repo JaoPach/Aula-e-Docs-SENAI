@@ -1,0 +1,269 @@
+/*OBSERVAÇÃO OS COMENTARIOS ABAIXO DE UM ATRIBUTO SÃO SUA EXPLICAÇÃO*/
+body {
+    margin: 0;
+    /*O body já vem com uma margem padrão esse codigo é para dar um reset*/
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 150px;
+    background-color: #0060B1;
+}
+
+.area-logo {
+    width: 20%;
+    height: 100px;
+}
+
+.pesquisa {
+    margin-left: auto;
+}
+
+/*Os elementos ul dentro da classe pesquisa receberão os seguintes atributos*/
+.pesquisa ul {
+    display: flex;
+    /*Padrão em Row/Linha*/
+    list-style: none;
+    /*Padrões de listas, numeração, bolinhas. Afirmando com o none nenhum padrão de listagem aparecera*/
+}
+
+.pesquisa ul li {
+    padding-right: 30px;
+    /*Espaçamento Interno*/
+    color: #fff;
+}
+
+.pesquisa ul li a {
+    color: #fff;
+}
+
+header {
+    display: flex;
+    /*Permite que alinhemos as divs uma do lado da outra*/
+    align-items: center;
+
+}
+
+.menu-superior {
+    width: 100%;
+    height: 35px;
+    background-color: #ff6500;
+    margin: 0;
+}
+
+.menu-superior ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.menu-superior ul li {
+    display: flex;
+    align-items: center;
+    /*Alinha verticalmente no centro*/
+    height: 35px;
+    /*Garante que o li ocupe toda a altura do menu*/
+}
+
+/*Quando tiver a "classe menu superior ul li ", ao passar o mouse sobre a categoria a mesma deve se expandir minimamente*/
+.menu-superior ul li:hover {
+    background-color: #E35214;
+    align-items: center;
+    /*Alinha verticalmente no centro*/
+    height: 35px;
+    /*Garante que o li ocupe toda a altura do menu*/
+}
+
+.menu-superior ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    /*Transforma as letras em maisculo*/
+    font-weight: bolder;
+    /*Deixa a letra mais "cheia"*/
+}
+
+.rodape {
+    background-color: black;
+    /* cor de fundo*/
+    color: #fff;
+    /* cor de texto*/
+}
+
+.rodape2 {
+    background-color: darkorchid;
+    color: deeppink;
+}
+
+.principal {
+    min-height: 100vh;
+    margin: 0% 1% 0% 1%;
+
+}
+
+.banner-home {
+    margin-bottom: -3px;
+}
+
+.banner-oferta {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.banner-oferta-item {
+    align-content: center;
+    margin-left: 25px;
+}
+
+.banner-oferta-item img {
+    width: 97%;
+}
+
+.header-main {
+    background-color: #ff6500;
+    color: #fff;
+}
+
+.header-main h3 {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cards-home {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    /*forma atual de declarar alinhamento*/
+    width: 250px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.card-produto-descricao {
+    /*font-size: 18px;*/
+    /*Tamanho da fonte*/
+    line-height: 22px;
+    /*Altura da linha*/
+    height: 66px;
+    /*Altura*/
+    overflow: hidden;
+    /*Esconder a parte que ultrapassar o layout*/
+    text-overflow: ellipsis;
+    /*Esconder a parte que ultrapassar a area visivel*/
+    display: -webkit-box;
+    /*Forma antiga de declarar o dysplay flex*/
+    -webkit-line-clamp: 3;
+    /*Define a quantidade de linhas disponivel para o texto*/
+    -webkit-box-orient: vertical;
+    /*forma antiga de declarar alinhamento vertical*/
+    color: #42264D;
+    font-weight: 900;
+    /*Preenchimento*/
+}
+
+.marcas-recomendadas {
+    min-height: 400px;
+    margin: 0px 20px 0px 20px;
+}
+
+.card-marcas-recomendadas {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.item-marcas-recomendadas {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    /*Largura minima*/
+    height: 250px;
+    border: 1px solid #cdcacad6;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.item-marcas-recomendadas a {
+    color: #FF6500;
+    text-decoration: none;
+}
+
+/*Quando é passado o mouse em cima do link aplica as propriedades abaixo*/
+.item-marcas-recomendadas a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Quando o link é acessado aplica as propriedades abaixo*/
+.item-marcas-recomendadas a:visited {
+    color: #FF6500;
+    text-decoration: none;
+}
+/*Quando é passado o mouse em cima de um link já visitado aplica as propriedades abaixo*/
+.item-marcas-recomendadas a:visited:hover {
+    color: #FF6500;
+    text-decoration: none;
+}
+
+.nome-marcas-recomendadas {
+    margin: 10px;
+    color: #42264D;
+    font-weight: bold;
+}
+
+.produto-preco {
+    font-size: 30px;
+    /*Tamanho de fonte*/
+    font-weight: bold;
+    color: #FF6500;
+}
+
+.preco-pix {
+    color: #4B4F55;
+}
+
+.produto-preco-antigo {
+    text-decoration: line-through;
+    /*tacha o texto*/
+    color: #4B4F55;
+}
+
+.borda-direita {
+    border-right: 1px solid #e8e5e5;
+    border-radius: 3%;
+}
+
+.borda-esquerda {
+    border-left: 1px solid #e8e5e5;
+    border-radius: 3%;
+}
+
+.texto-maiusculo {
+    text-transform: uppercase;
+}
+
+.texto-cor-verde {
+    color: green;
+}
+
+.texto-cor-laranja {
+    color: #E35214;
+}
+
+.margem-titulo {
+    margin-left: 5%;
+}
